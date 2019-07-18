@@ -1,0 +1,23 @@
+body{
+    background-color: #233237;
+}
+#divCadastro{
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255, 0.90);
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+#btnEntrar{
+    background-color: #CD5360;
+    border-radius: 20px;
+    width: 200px;
+    letter-spacing: .5px;
+    text-align: center;
+  }
+  #divButton{
+    margin-left: 30%;
+    position: relative;
+  }
+  .corA{
+    color: #233237 !important;
+  }

@@ -1,0 +1,38 @@
+body{
+  background-color: #233237;
+}
+
+#divLogin{
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255, 0.90);
+  margin-top: 35%;
+  position: relative;
+}
+
+#btnEntrar{
+  background-color: #CD5360;
+  border-radius: 20px;
+  width: 200px;
+  letter-spacing: .5px;
+  text-align: center;
+}
+
+#divButton{
+  margin-left: 30%;
+  position: relative;
+}
+
+#divLink{
+  margin-left: 35%;
+  position: relative;
+}
+
+#divLink1{
+  margin-right: 50%;
+  margin-left: 50%;
+  position: relative;
+}
+
+.corA{
+  color: #233237 !important;
+}

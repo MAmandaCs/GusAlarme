@@ -1,0 +1,157 @@
+<!-- <form (ngSubmit)="onSubmit()">
+  <div class="container">
+    <div class="container">
+      <div class="container" id="divCadastro">
+        <div class="col l12" > 
+          <div class="row">
+          <div class="col l1"></div>
+          <div class="col l11">
+            <h5>Cadastre-se</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col l1"></div>
+          <div class="input-field col l10">
+              <i class="material-icons prefix pt-2">person_outline</i>
+              <input id="icon_prefix" type="text" class="validate" [(ngModel)]="TelaCadastro.Nome">
+              <label for="icon_prefix">Nome Completo</label>
+          </div>
+          <div class="col l1"></div>
+        </div>
+        <div class="row">
+            <div class="col l1"></div>
+            <div class="input-field col l5">
+                <i class="material-icons prefix pt-2">credit_card_outline</i>
+                <input id="icon_prefix" type="number" class="validate" [(ngModel)]="TelaCadastro.CPF">
+                <label for="icon_prefix">CPF</label>
+            </div>
+            <div class="input-field col l5">
+                <i class="material-icons prefix pt-2">date_range_outline</i>
+                <input id="icon_prefix" type="text" class="datepicker" [(ngModel)]="TelaCadastro.DataNascimento">
+                <label for="icon_prefix">Data de Nascimento</label>
+            </div>
+            <div class="col l1"></div>
+          </div>
+          <div class="row">
+            <div class="col l1"></div>
+            <div class="input-field col l5">
+              <i class="material-icons prefix pt-2">wc_outline</i>
+              <select>
+                <option value="1">Feminino</option>
+                <option value="2">Masculino</option>
+                <option value="3">Não quero declarar</option>
+              </select>
+              <label>Sexo</label>
+            </div>
+            <div class="input-field col l5">
+                <i class="material-icons prefix pt-2">settings_phone_outline</i>
+                <input id="icon_prefix" type="number" class="validate" [(ngModel)]="TelaCadastro.Celular">
+                <label for="icon_prefix">Celular</label>
+            </div>
+            <div class="col l1"></div>
+          </div>
+          <div class="row">
+            <div class="col l1"></div>
+            <div class="input-field col l5">
+              <i class="material-icons prefix pt-2">public_outline</i>
+              <select>
+                  <option value="1">Garanhuns</option>
+                  <option value="2">São João</option>
+                  <option value="3">Angelim</option>
+                  <option value="1">Canhotinho</option>
+                  <option value="2">Jupi</option>
+                  <option value="3">Calçado</option>
+                  <option value="1">Lajedo</option>
+                  <option value="2">Caetés</option>
+                  <option value="3">Capoeiras</option>
+                  <option value="1">Paranatama</option>
+                  <option value="2">Miracica</option>
+                  <option value="3">Iati</option>
+                  <option value="1">Brejão</option>
+                  <option value="2">Terezinha</option>
+                  <option value="3">Bom Conselho</option>
+                  <option value="1">Iratama</option>
+                  <option value="2">Lagoa do Ouro</option>
+                  <option value="3">Correntes</option>
+                  <option value="1">Jurema</option>
+                  <option value="2">Cachoeirinha</option>
+                </select>
+                <label>Cidade</label>
+              </div>
+            <div class="input-field col l5">
+                <i class="material-icons prefix pt-2">place_outline</i>
+                <input id="icon_prefix" type="text" class="validate" [(ngModel)]="TelaCadastro.Bairro">
+                <label for="icon_prefix">Bairro</label>
+            </div>
+          </div>
+        <div class="row">
+          <div class="col l1"></div>
+          <div class="input-field col l7">
+              <i class="material-icons prefix pt-2">map_outline</i>
+              <input id="icon_prefix" type="text" class="validate" [(ngModel)]="TelaCadastro.Rua">
+              <label for="icon_prefix">Rua</label>
+          </div>
+          <div class="input-field col l3">
+              <i class="material-icons prefix pt-2">money_outline</i>
+              <input id="icon_prefix" type="number" class="validate" [(ngModel)]="TelaCadastro.Numero">
+              <label for="icon_prefix">Número</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col l1"></div>
+          <div class="input-field col l5">
+              <i class="material-icons prefix pt-2">my_location_outline</i>
+              <input id="icon_prefix" type="number" class="validate" [(ngModel)]="TelaCadastro.CEP">
+              <label for="icon_prefix">CEP</label>
+          </div>
+          <div class="input-field col l5">
+              <i class="material-icons prefix pt-2">pin_drop_outline</i>
+              <input id="icon_prefix" type="text" class="validate" [(ngModel)]="TelaCadastro.Complemento">
+              <label for="icon_prefix">Complemento</label>
+          </div>
+          <div class="col l1"></div>
+        </div>
+        <div class="row">
+            <div class="col l1"></div>
+            <div class="input-field col l10">
+                <i class="material-icons prefix pt-2">local_post_office_outline</i>
+                <input id="icon_prefix" type="text" class="validate" [(ngModel)]="TelaCadastro.Email">
+                <label for="icon_prefix">Email</label>
+            </div>
+            <div class="col l1"></div>
+          </div>
+          <div class="row">
+            <div class="col l1"></div>
+            <div class="input-field col l5">
+                <i class="material-icons prefix pt-2">lock_outline</i>
+                <input id="icon_prefix" type="password" class="validate" [(ngModel)]="TelaCadastro.Senha">
+                <label for="icon_prefix">Senha</label>
+            </div>
+            <div class="input-field col l5">
+                <i class="material-icons prefix pt-2">lock_outline</i>
+                <input id="icon_prefix" type="password" class="validate" [(ngModel)]="TelaCadastro.ConfSenha">
+                <label for="icon_prefix">Confirmar a senha</label>
+            </div>
+            <div class="col l1"></div>
+          </div>
+          <div id="divButton">
+              <a id="btnEntrar" class="waves-effect waves-light btn" type="submit">Entrar</a>
+          </div>
+        </br>
+        <div class="row">
+        <div class="col l6">
+            <a class="corA" href="../tela-login/tela-login.component.html">Já tem uma conta? Login.</a>
+          </div>
+        <div class="col l6"></div>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+</form>
+
+<router-outlet></router-outlet> -->
+
+AAAAAAAAAA
